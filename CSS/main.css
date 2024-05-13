@@ -5,7 +5,7 @@
 }
 
 body {
-    /* #363532, rgb(88, 111, 112) */
+    
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ body {
     padding-top: 3%;
 }
 
-/* Body light or darker themes */
+
 .standard {
     background-image: linear-gradient(100deg, #575656, #062e3f);
     color: #ffdfdb;
@@ -50,7 +50,7 @@ body {
     width: 100%;
 }
 
-/* Theme buttons div */
+
 .flexrow-container {
     align-items: center;
     align-self: flex-end;
@@ -89,7 +89,7 @@ body {
     background-image: linear-gradient(100deg, #001214, #001f29);
 }
 
-/* Animation */
+
 #title {
     border-right: solid 3px rgba(0, 0, 0, 0.75);
     white-space: pre;
@@ -100,7 +100,7 @@ body {
     max-width: 480px;
   }
   
-  /* Animation */
+ 
 #title {
     animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
         animated-cursor 750ms steps(11,end) infinite;
@@ -110,14 +110,14 @@ body {
     animation: animated-text 2s steps(11,end) 0.5s 1 normal both, darker-animated-cursor 750ms steps(11,end) infinite;
 }
   
-  /* text animation */
+ 
   
   @keyframes animated-text{
     from{width: 0%;}
     to{width: 480px;}
   }
   
-  /* cursor animations */
+  
   
   @keyframes animated-cursor{
     from{border-right-color: rgba(0, 0, 0, 0.75);}
@@ -143,7 +143,7 @@ form input {
     font-size: 17px;
     border: none;
     outline: none;
-    /* border-radius: 15; */
+    
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
     max-width: 500px;
@@ -151,7 +151,7 @@ form input {
     width: 100%;
 }
 
-/* Input themes */
+
 form input.standard-input {
     background-color: #181a1a;
     color: rgb(247, 226, 223);
@@ -204,7 +204,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* Button themes */
+
 button.standard-button {
     background-color: rgb(247, 226, 223);
     color: rgb(0, 0, 0);
@@ -251,14 +251,13 @@ form button {
 .todo-list {
     min-width: 25%;
 
-    /* To remove the bullets of unordered list */
+    
     list-style: none;
 }
 
 .todo {
     margin: 1rem;
-    /* background: rgb(247, 226, 223); */
-    /* color: black; */
+    
     font-size: 19px;
     display: flex;
     justify-content: space-between;
@@ -268,7 +267,6 @@ form button {
     transition: background-color 200ms ease-in-out;
 }
 
-/* Items themes */
 .standard-todo {
     background-color: rgb(26, 27, 27);
 }
@@ -283,13 +281,10 @@ form button {
 
 .todo li{
     padding: 7px;
-    /* word-wrap: break-word; */
-    /* flex-wrap: wrap; */
     font-size: 20px;
-    flex: 1; /* To push the trash and the check button to the right */
+    flex: 1; 
     border-radius: 30px;
 
-    /* wraps the links */
     overflow-wrap: anywhere;
 }
 
@@ -323,7 +318,6 @@ form button {
     opacity: 0;
 }
 
-/* Responsive design */
 @media only screen and (max-width: 1000px) {
     .flexrow-container {
         align-self: unset;
